@@ -6,7 +6,11 @@ print('{:=^60}'.format(' Lista de Compras '))
 print('*-' * 30)
 
 lista_atual = list()
-todas_listas = [lista_atual]
+lista_2 = list()
+lista_3 = list()
+lista_4 = list()
+lista_5 = list()
+todas_listas = [lista_atual, lista_2, lista_3, lista_4, lista_5]
 invalid_input = True
 
 
@@ -52,8 +56,9 @@ def start():
                     lista_atual.remove(produto.capitalize())
 
     elif opcao == 3:
-        print(f'Você possui um total de {len(todas_listas)} lista')
-        print(f'Selecione as lista que deseja{lista_atual}')
+        # FAZER AS 5 LISTAS PRONTAS
+        print(f'Você possui um total de {len(todas_listas)} listas')
+        print(f'Selecione as lista que deseja{lista_atual, lista_2, lista_3, lista_4, lista_5}')
 
     elif opcao == 4:
         print('Finalizando programa, até mais!')
@@ -62,5 +67,3 @@ def start():
 
 while invalid_input:
     start()
-
-
