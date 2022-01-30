@@ -34,7 +34,6 @@ def add_produtos():
             print(f'Produto {produto} adicionado com sucesso')
 
 
-
 dicionario_um()
 nome_da_primeira_lista()
 
