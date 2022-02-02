@@ -1,4 +1,11 @@
 import sys
+# python -m projeto_lista
+
+
+def inicio():
+    print('*-' * 30)
+    print(f'{" Lista de Compras ":=^60}')
+    print('*-' * 30)
 
 
 def dicionario_um():
@@ -34,15 +41,6 @@ def add_produtos():
             print(f'Produto {produto} adicionado com sucesso')
 
 
-
-dicionario_um()
-nome_da_primeira_lista()
-
-print('*-' * 30)
-print('{:=^60}'.format(' Lista de Compras '))
-print('*-' * 30)
-
-invalid_input = True
 def start():
     opcao = int(input("""Selecione a opção que você deseja: 
         [ 1 ] - Visualizar lista 
@@ -73,7 +71,11 @@ def start():
         print('Finalizando programa, até mais!')
         sys.exit()
 
+invalid_input = True
 
+dicionario_um()
+nome_da_primeira_lista()
+inicio()
 
 while invalid_input:
     start()
